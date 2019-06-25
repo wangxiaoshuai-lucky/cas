@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>单点登录</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+<script>
+    function call(username, token) {
+        console.log(username);
+        console.log(token);
+        document.cookie="x-token="+token;
+    }
+</script>
+<script type="text/javascript" src="http://localhost:8080/uc/auth?callback=call"></script>
+</body>
+</html>
